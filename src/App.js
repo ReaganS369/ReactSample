@@ -1,22 +1,25 @@
+/** @format */
+
 import logo from './logo.svg';
 import './App.css';
+// import LogoName from './LogoName';
+import Header from './Header';
+import LogoList from './LogoList';
+
+function clicking() {
+  console.log('Helow this my assignmnet');
+}
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <LogoList />
+        <button className="button" onClick={clicking}>
+          Click
+        </button>
       </header>
     </div>
   );
